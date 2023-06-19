@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Epilogue:wght@400;700;800&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* UTILITY CLASS */
+
+.container{
+    max-width: 1180px;
+    margin: auto;
+    
+}
+
+
+/* HEADER */
+
+.header{
+    max-width: 100%;
+}
+
+.navbar{
+    margin: 21px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo img{
+    height: 41px;
+    width: 100px;
+    margin-left: 8px;
+    
+} 
+
+.menu ul{
+    display: flex;
+    /* flex-direction: row;
+    gap: 40px; */
+    cursor: pointer;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.menu ul li{
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: rgb(150, 149, 149);
+    position: relative;
+}
+
+.nav-link:hover{
+    color: black;
+    
+}
+
+.nav-link::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #8071D0;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    opacity: 0;
+}
+
+.nav-link:hover::after{
+    opacity: 1;
+}
+
+.nav-btn{
+    background: #FFD8DB;
+    color: #A389CC;
+    padding: 12px 22px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* FEATURE SECTION  */
+
+.feature-section-container{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.feature-description{
+    width: 30%;
+    margin-top: 20px;
+    
+    
+}
+
+.feature-description h2{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 55px;
+}
+
+.feature-description p{
+    margin: 20px 0px;
+    font-size: 12px;
+}
+
+.feature-description .buttons{
+    
+    display: flex;align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.new-account-btn{
+    background: #5243C0;
+    color:  #ffffff;
+    padding: 12px 22px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.arrow-btn{
+    height: 43px;
+    width: 43px;
+}
+
+.fa-square{
+    color: blue;
+    font-size: 10px;
+}
+
+.feature-image{
+    
+}
+
+/* CARDS */
+
+.cards{
+    margin-top: 120px;
+}
+
+.card{
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-direction: row;
+    gap: 25px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px 8px;
+    background: rgb(240, 239, 239);
+    border-radius: 10px;
+    border: none;
+}
+
+.card:hover{
+    background: white;
+    box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.75);
+}
+
+.fa-circle-check{
+    color: rgb(150, 149, 149);
+    font-size: 18px;
+}
+
+
+
+
+
+.card h6{
+    color: rgb(150, 149, 149);
+    font-size: 11px;
+}
+
+.dmm-box{
+    background: #FED7DA;
+    height: 8px;
+    width: 17px;
+    border-radius: 4px;
+}
+
+.blurr-box{
+    background: #FD6534;
+    height: 8px;
+    width: 17px;
+    border-radius: 4px;
+}
+
+.illus-box{
+    background: #9ED095;
+    height: 8px;
+    width: 17px;
+    border-radius: 4px;
+}
+.refunds-box{
+    background: #FFE4A0;
+    height: 8px;
+    width: 17px;
+    border-radius: 4px;
+}
+
+.dmm{
+    margin-left: 25px;
+}
+
+.Illustration{
+    margin-left: 39px;
+}
+
+.refunds{
+    margin-left: 62px;
+}
